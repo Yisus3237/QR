@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function changeImage() {
+            // Generate a new URL for the changing image (replace 'image.jpg' with your image URL)
+            const newImageUrl = 'img/QR.png';
+            
+            // Update the src attribute of the image tag
+            document.getElementById('img/QR.png').src = newImageUrl;
+        }
+    
+        // Call the changeImage function every 5 seconds (adjust the interval as needed)
+        setInterval(changeImage, 100000); // 5000 milliseconds = 5 seconds
+    </script>
+    
+    <div class="container">
+        <h1>Constantly Changing Image</h1>
+    <img id="QR" src="img\QR.png">
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
